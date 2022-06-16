@@ -17,13 +17,12 @@ const db = require("./config/keys").mongoURI;
 
 // connect to MongoDB
 mongoose
-    .connect(
+  .connect(
     db,
-    {useNewUrlParser: true}
-)
-    .then(() => console.log("MongoDB successfully connected"))
-    .catch(err => console.log("err"));
-
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log("MongoDB successfully connected"))
+  .catch(err => console.log(err));
 
 // process.env.port is Heroku's port
 const port = process.env.PORT || 5000;
