@@ -80,7 +80,7 @@ router.post('/login', (req, res) => {
           id: user.id,
           name: user.name
         };
-        
+
         // Sign token
         jwt.sign(
           payload,
@@ -103,3 +103,5 @@ router.post('/login', (req, res) => {
     });
   });
 });
+
+module.exports = router;
