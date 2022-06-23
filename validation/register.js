@@ -27,7 +27,7 @@ module.exports = function validateRegisterInput(data) {
     if (validator.isEmpty(data.password)) {
         errors.password = "Password field required";
     }
-    if (validator.isEmpty(data.password2d2)) {
+    if (validator.isEmpty(data.password2)) {
         errors.password2 = "Confirm Password is required";
     }
 
