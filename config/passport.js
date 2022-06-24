@@ -21,3 +21,5 @@ module.exports = passport => {
     })
   );
 };
+
+// Todo: try to understand JWT better.
