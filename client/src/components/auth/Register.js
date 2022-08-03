@@ -49,6 +49,19 @@ class Register extends component {
                                 Already have an account? <Link to="/login">Log in</Link>
                             </p>
                         </div>
+                        <form noValidate onSubmit={this.onSubmit}>
+                            <div className="input-field col s12">
+                                <input
+                                    onChange={this.onChange}
+                                    value={this.state.name}
+                                    error={errors.name}
+                                    id="name"
+                                    type="text"
+                                />
+                                <label htmlFor="name">name</label>
+                            </div>
+
+                        </form>
 
                     </div>
 
