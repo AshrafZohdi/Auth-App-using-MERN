@@ -70,6 +70,26 @@ class Register extends component {
                                 />
                                 <label htmlFor="email">Email</label>
                             </div>
+                            <div className="input-field col s12">
+                                <input
+                                    onChange={this.onChange}
+                                    value={this.state.password}
+                                    error={errors.password}
+                                    id="password"
+                                    type="password"
+                                />
+                                <label htmlFor="password">Password</label>
+                            </div>
+                            <div className="input-field col s12">
+                                <input
+                                    onChange={this.onChange}
+                                    value={this.state.password2}
+                                    error={errors.password2}
+                                    id="password2"
+                                    type="password"
+                                />
+                                <label htmlFor="password">Confirm Password</label>
+                            </div>
 
                         </form>
 
