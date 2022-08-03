@@ -30,6 +30,32 @@ class Register extends component {
         console.log(newUser);
     };
 
-    
+    render() {
+        const { errors } = this.state;
+
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col s8 offset-s2">
+                        <Link to="/" className="btn-flat waves-flat">
+                            <i className="material-icons left"></i>
+                            Back to Home
+                        </Link>
+                        <div className="col s12" style={{paddingLeft: "11.250px"}}>
+                            <h4>
+                                <b>Register</b> below
+                            </h4>
+                            <p className="grey-text text-darken-1">
+                                Already have an account? <Link to="/login">Log in</Link>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        )
+    }
 
 }
