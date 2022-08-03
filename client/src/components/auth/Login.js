@@ -42,7 +42,7 @@ class Login extends component {
                             </i>
                             Back to Home
                         </Link>
-                        
+                        /* This is where I stopped. Carry on from here*/
                     </div>
                 </div>
             </div>
