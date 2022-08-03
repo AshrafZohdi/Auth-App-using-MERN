@@ -58,7 +58,17 @@ class Register extends component {
                                     id="name"
                                     type="text"
                                 />
-                                <label htmlFor="name">name</label>
+                                <label htmlFor="name">Name</label>
+                            </div>
+                            <div className="input-field col s12">
+                                <input
+                                    onChange={this.onChange}
+                                    value={this.state.email}
+                                    error={errors.email}
+                                    id="email"
+                                    type="email"
+                                />
+                                <label htmlFor="email">Email</label>
                             </div>
 
                         </form>
