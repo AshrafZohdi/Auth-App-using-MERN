@@ -25,9 +25,11 @@ class Register extends component {
             email: this.state.email,
             password: this.state.password,
             password2: this.state.password2
-            
+        };
+
+        console.log(newUser);
+    };
+
     
-        }
-    }
 
 }
